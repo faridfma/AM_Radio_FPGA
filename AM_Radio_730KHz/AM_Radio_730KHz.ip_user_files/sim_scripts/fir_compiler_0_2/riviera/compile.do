@@ -15,7 +15,6 @@ vmap fir_compiler_v7_2_11 riviera/fir_compiler_v7_2_11
 
 vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../../../../FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_0_2/cmodel" \
 "C:/Vivadonew2018/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"C:/Vivadonew2018/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -93 \
 "C:/Vivadonew2018/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
@@ -31,6 +30,7 @@ vcom -work fir_compiler_v7_2_11 -93 \
 
 vcom -work xil_defaultlib -93 \
 "../../../../../../../FPGA/FIR_SysGen/SysGenIP/ip/fir_compiler_0_2/sim/fir_compiler_0.vhd" \
+
 
 vlog -work xil_defaultlib \
 "glbl.v"
