@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Feb  3 17:36:28 2026
+# Process ID: 26116
+# Current directory: C:/Users/fmabrouk/Documents/GitHub/AM_Radio_730KHz/AM_Radio_730KHz/AM_Radio_730KHz.runs/impl_1
+# Command line: vivado.exe -log AM_Radio_730_KHz_TopLevel.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AM_Radio_730_KHz_TopLevel.tcl -notrace
+# Log file: C:/Users/fmabrouk/Documents/GitHub/AM_Radio_730KHz/AM_Radio_730KHz/AM_Radio_730KHz.runs/impl_1/AM_Radio_730_KHz_TopLevel.vdi
+# Journal file: C:/Users/fmabrouk/Documents/GitHub/AM_Radio_730KHz/AM_Radio_730KHz/AM_Radio_730KHz.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source AM_Radio_730_KHz_TopLevel.tcl -notrace

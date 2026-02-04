@@ -1,0 +1,302 @@
+
+*** Running vivado
+    with args -log mult_gen_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult_gen_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source mult_gen_0.tcl -notrace
+Command: synth_design -top mult_gen_0 -part xczu9eg-ffvb1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2019.11' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 38852 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 474.012 ; gain = 97.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_2/synth/mult_gen_0.vhd:69]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_2/synth/mult_gen_0.vhd:72]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_2/synth/mult_gen_0.vhd:72]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 8 - type: integer 
+	Parameter C_B_TYPE bound to: 1 - type: integer 
+	Parameter C_OUT_HIGH bound to: 23 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 0 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_14' declared at 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_2/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_14' [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_2/synth/mult_gen_0.vhd:123]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (6#1) [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_2/synth/mult_gen_0.vhd:69]
+WARNING: [Synth 8-3331] design delay_line has unconnected port SCLR
+WARNING: [Synth 8-3331] design mult_gen_v12_0_14_viv has unconnected port SCLR
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 543.133 ; gain = 166.133
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 543.133 ; gain = 166.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 543.133 ; gain = 166.133
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 208 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_2/mult_gen_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/mult_gen_0_2/mult_gen_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/fmabrouk/Documents/GitHub/AM_Radio_730KHz/AM_Radio_730KHz/AM_Radio_730KHz.runs/mult_gen_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/fmabrouk/Documents/GitHub/AM_Radio_730KHz/AM_Radio_730KHz/AM_Radio_730KHz.runs/mult_gen_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1523.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 68 instances were transformed.
+  MULT_AND => LUT2: 68 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1523.648 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1523.648 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1523.648 ; gain = 1146.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1523.648 ; gain = 1146.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/fmabrouk/Documents/GitHub/AM_Radio_730KHz/AM_Radio_730KHz/AM_Radio_730KHz.runs/mult_gen_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1523.648 ; gain = 1146.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1523.648 ; gain = 1146.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design mult_gen_v12_0_14_viv has unconnected port SCLR
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[0][19]' (FDRE) to 'U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[1][20]' (FDRE) to 'U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[1][19]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1523.648 ; gain = 1146.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1933.688 ; gain = 1556.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1934.262 ; gain = 1557.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1944.355 ; gain = 1567.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1944.355 ; gain = 1567.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1944.355 ; gain = 1567.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1944.355 ; gain = 1567.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1944.355 ; gain = 1567.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1944.355 ; gain = 1567.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1944.355 ; gain = 1567.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |     9|
+|2     |LUT1     |     3|
+|3     |LUT2     |    60|
+|4     |LUT3     |     8|
+|5     |LUT4     |    60|
+|6     |MULT_AND |    68|
+|7     |MUXCY    |    68|
+|8     |SRL16E   |     2|
+|9     |XORCY    |    72|
+|10    |FDRE     |   156|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1944.355 ; gain = 1567.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 1944.355 ; gain = 586.840
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1944.355 ; gain = 1567.355
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 217 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1982.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 80 instances were transformed.
+  (CARRY4) => CARRY8: 12 instances
+  MULT_AND => LUT2: 68 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 1982.430 ; gain = 1605.430
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1982.430 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fmabrouk/Documents/GitHub/AM_Radio_730KHz/AM_Radio_730KHz/AM_Radio_730KHz.runs/mult_gen_0_synth_1/mult_gen_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mult_gen_0, cache-ID = 6606b16ca9fec9c3
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1986.828 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fmabrouk/Documents/GitHub/AM_Radio_730KHz/AM_Radio_730KHz/AM_Radio_730KHz.runs/mult_gen_0_synth_1/mult_gen_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mult_gen_0_utilization_synth.rpt -pb mult_gen_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 31 17:15:43 2026...

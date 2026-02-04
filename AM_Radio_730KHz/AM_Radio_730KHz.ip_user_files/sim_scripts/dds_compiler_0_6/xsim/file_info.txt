@@ -1,0 +1,2 @@
+dds_compiler_0.vhd,vhdl,xil_defaultlib,../../../../../../../FPGA/FIR_SysGen/SysGenIP/ip/dds_compiler_0_6/sim/dds_compiler_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,51 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Feb  4 14:06:19 2026
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file AM_Radio_730_KHz_TopLevel_methodology_drc_routed.rpt -pb AM_Radio_730_KHz_TopLevel_methodology_drc_routed.pb -rpx AM_Radio_730_KHz_TopLevel_methodology_drc_routed.rpx
+| Design       : AM_Radio_730_KHz_TopLevel
+| Device       : xczu9eg-ffvb1156-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 3
++----------+----------+--------------------------------------------+------------+
+| Rule     | Severity | Description                                | Violations |
++----------+----------+--------------------------------------------+------------+
+| TIMING-2 | Warning  | Invalid primary clock source pin           | 2          |
+| CLKC-56  | Advisory | MMCME4 with global clock driver has no LOC | 1          |
++----------+----------+--------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-2#1 Warning
+Invalid primary clock source pin  
+A primary clock Clk_Wizard/inst/clk_in1 is created on an inappropriate pin Clk_Wizard/inst/clk_in1. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#2 Warning
+Invalid primary clock source pin  
+A primary clock sys_clk_pin is created on an inappropriate pin clk_buf/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+CLKC-56#1 Advisory
+MMCME4 with global clock driver has no LOC  
+The MMCME4_ADV cell Clk_Wizard/inst/mmcme4_adv_inst CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) clk_buf and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+
